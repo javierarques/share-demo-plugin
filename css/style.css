@@ -1,0 +1,15 @@
+/* some styles for the sharing buttons */
+.ps-plugindev-sharing #facebook,
+.ps-plugindev-sharing #stumbleupon,
+.ps-plugindev-sharing #digg,
+.ps-plugindev-sharing #email{
+	float: left;
+	margin-right: 20px;
+}
+.ps-plugindev-sharing #google,
+.ps-plugindev-sharing #twitter {
+	float: left;
+}
+.ps-plugindev-sharing {
+	clear: both;
+}
