@@ -1,15 +1,48 @@
-/* some styles for the sharing buttons */
-.ps-plugindev-sharing #facebook,
-.ps-plugindev-sharing #stumbleupon,
-.ps-plugindev-sharing #digg,
-.ps-plugindev-sharing #email{
-	float: left;
-	margin-right: 20px;
+/*
+
+    Share Demo Plugin CSS
+
+*/
+.share-demo-plugin-buttons{
+    list-style: none;
+    margin: 0 0 1em 0;
 }
-.ps-plugindev-sharing #google,
-.ps-plugindev-sharing #twitter {
-	float: left;
+.share-demo-plugin-buttons li{
+    display: inline-block;
+    margin: 0 0.4em 0 0;
 }
-.ps-plugindev-sharing {
-	clear: both;
+.share-demo-plugin-buttons li:last-child{
+    margin-right: 0;
+}
+
+/* Facebook */
+.share-demo-plugin-button.facebook{
+    background-color: #3b5998;
+}
+.share-demo-plugin-button.facebook:hover{
+    background-color: #2A416D;
+}
+
+/* Twitter */
+.share-demo-plugin-button.twitter{
+    background-color: #00aced;
+}
+.share-demo-plugin-button.twitter:hover{
+    background-color: #0076a4;
+}
+
+/* Google */
+.share-demo-plugin-button.google{
+    background-color: #dd4b39;
+}
+.share-demo-plugin-button.google:hover{
+    background-color: #ab3a2b;
+}
+
+/* Linkedin */
+.share-demo-plugin-button.linkedin{
+    background-color: #007bb6;
+}
+.share-demo-plugin-button.linkedin:hover{
+    background-color: #005e8e;
 }

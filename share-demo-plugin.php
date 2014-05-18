@@ -31,10 +31,10 @@ function share_demo_plugin_content( $content ) {
         '<div class="share-demo-plugin">'.
             '<h3 class="share-demo-plugin-title">'. $share_text . '</h3>'.
             '<ul class="share-demo-plugin-buttons">'.
-                '<li><a href="'.$fb_url.'" class="btn btn-small share-demo-plugin-button"><i class="facebook"></i> Facebook</a></li>'.
-                '<li><a href="'.$twitter_url.'" class="btn btn-small share-demo-plugin-button"><i class="twitter"></i> Twitter</a></li>'.
-                '<li><a href="'.$gplus_url.'" class="btn btn-small share-demo-plugin-button"><i class="google"></i> Google+</a></li>'.
-                '<li><a href="'.$linkein_url.'" class="btn btn-small share-demo-plugin-button"><i class="linkedin"></i> Linkedin</a></li>'.
+                '<li><a href="'.$fb_url.'" class="button small facebook share-demo-plugin-button"><i class="facebook"></i> Facebook</a></li>'.
+                '<li><a href="'.$twitter_url.'" class="button small twitter share-demo-plugin-button"><i class="twitter"></i> Twitter</a></li>'.
+                '<li><a href="'.$gplus_url.'" class="button small google share-demo-plugin-button"><i class="google"></i> Google+</a></li>'.
+                '<li><a href="'.$linkein_url.'" class="button small linkedin share-demo-plugin-button"><i class="linkedin"></i> Linkedin</a></li>'.
             '</ul>'.
         '</div>';
 
@@ -44,12 +44,9 @@ function share_demo_plugin_content( $content ) {
 
 add_filter('the_content', 'share_demo_plugin_content');
 
-
-
-/***************************************************************
- *  ADMIN OPTIONS
- ***************************************************************/
-
+/*
+ *  Admin options
+ */
 function share_demo_plugin_options_page() {
 
     if ( isset ( $_POST['share_demo_plugin_text']))
@@ -92,11 +89,8 @@ add_action( 'admin_menu', 'share_demo_plugin_menu' );
 
 
 
-/***************************************************************
- *  FRONT ENQUEUE
- ***************************************************************/
-
-/**
+/*
+ * Front end enqueue JS & CSS
  * Proper way to enqueue scripts and styles
  */
 function share_demo_plugin_enqueues() {
